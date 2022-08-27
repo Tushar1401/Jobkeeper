@@ -18,4 +18,7 @@ import { Provider } from 'react-redux';
 // );
 
 const root = document.getElementById("root");
-render(<App />, root);
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>, root);
